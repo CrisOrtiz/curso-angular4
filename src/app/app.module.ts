@@ -11,7 +11,7 @@ import { HomeComponent } from './home/home.component';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { ProfesoresComponent } from './profesores/profesores.component';
+
 
 @NgModule({
    declarations: [
@@ -19,8 +19,7 @@ import { ProfesoresComponent } from './profesores/profesores.component';
       FrutaComponent,
       EmpleadosComponent,
       HomeComponent,
-      ContactoComponent,
-      ProfesoresComponent
+      ContactoComponent
    ],
    imports: [
       BrowserModule,

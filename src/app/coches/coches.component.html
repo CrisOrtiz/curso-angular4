@@ -1,6 +1,6 @@
 <h1>Cmponente de coches</h1>
 
-<form #formCoche="ngForm" (ngSubmit)="onSubmit()">
+<form #formCoche="ngForm" (ngSubmit)="onSubmit()" [ngClass]="{'formulario': true}">
   <p>
     <label>Nombre:</label><br>
     <input type="text" name="nombre" #nombre="ngModel" [(ngModel)]="coche.nombre" required>
@@ -16,3 +16,4 @@
 
   <input type="submit" value="Guardar">
 </form>
+

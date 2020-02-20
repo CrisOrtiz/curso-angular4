@@ -16,3 +16,15 @@
     font-weight: bold;
     background-color: yellowgreen;
 }
+
+.formulario{
+    background-color: darkslategrey;
+    color:white;
+    font-style: italic;
+    font-family: sans-serif;
+    font-weight: bolder;
+    text-align: center;
+    margin-left: 250px;
+    margin-right: 250px;
+    border-radius: 35%;
+}

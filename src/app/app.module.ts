@@ -1,3 +1,4 @@
+
 import { EmpleadosComponent } from './empleados/empleados.component';
 import { FrutaComponent } from './fruta/fruta.component';
 import { BrowserModule } from '@angular/platform-browser';
@@ -12,6 +13,8 @@ import { HomeComponent } from './home/home.component';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 
+import { ConversorPipe } from './pipes/conversor.pipe';
+
 
 @NgModule({
    declarations: [
@@ -19,7 +22,8 @@ import { AppComponent } from './app.component';
       FrutaComponent,
       EmpleadosComponent,
       HomeComponent,
-      ContactoComponent
+      ContactoComponent,
+      ConversorPipe
    ],
    imports: [
       BrowserModule,

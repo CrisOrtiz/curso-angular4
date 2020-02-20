@@ -12,9 +12,13 @@ export class HomeComponent{
     public listado_ropa:Array<string>;
     public prenda_a_guardar:string;
 
+    public fecha;
+
     constructor(
         private _ropaService: RopaService
-    ){}
+    ){
+        this.fecha = new Date(2020,2,19);
+    }
 
     ngOnInit(){
         console.log( this.listado_ropa = this._ropaService.getropa());

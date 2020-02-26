@@ -8,16 +8,20 @@ import { Observable } from 'rxjs';
 export class PeticionesService {
     public url:string;
 
-    constructor(){
+    constructor(private _http:HttpClient){
         this.url="https://jsonplaceholder.typicode.com/posts";
     }
     getPrueba() {
         return 'Hola mundo desde el Servicio';
-        
+
+    }
+
+    getArticulos(): Observable<any>{
+        return this._http.get(this.url);
     }
 }
 
 
 
-//correccion de version de angular usar map asi ---> .pipe(map(res => res.json())); 
+//aqui hay un error con json pero la solucion esta en los comentarios del video 
 

@@ -15,6 +15,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 
 import { ConversorPipe } from './pipes/conversor.pipe';
+import { PlantillasComponent } from './plantillas/plantillas.component';
 
 
 @NgModule({
@@ -25,7 +26,8 @@ import { ConversorPipe } from './pipes/conversor.pipe';
       HomeComponent,
       ContactoComponent,
       CochesComponent,
-      ConversorPipe
+      ConversorPipe,
+      PlantillasComponent
    ],
    imports: [
       BrowserModule,
